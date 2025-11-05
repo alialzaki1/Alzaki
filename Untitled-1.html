@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Alzaki - Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 40px 30px;
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #e94560 0%, #d63447 100%);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 15px;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(233, 69, 96, 0.5);
+            transform: translateX(-5px);
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.3);
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .icon.phone {
+            background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+        }
+
+        .icon.whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        }
+
+        .icon.email {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .icon.instagram {
+            background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
+        }
+
+        .contact-info {
+            flex: 1;
+            text-align: right;
+        }
+
+        .contact-label {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 5px;
+        }
+
+        .contact-value {
+            font-size: 15px;
+            color: #ffffff;
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 35px 25px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .contact-item {
+                padding: 15px;
+            }
+
+            .contact-value {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <div class="avatar">👨‍💼</div>
+            <h1>علي الزاكي | Ali Alzaki</h1>
+            <p class="subtitle">معلومات التواصل | Contact Information</p>
+        </div>
+
+        <a href="tel:+97336640338" class="contact-item">
+            <div class="icon phone">📱</div>
+            <div class="contact-info">
+                <div class="contact-label">رقم الهاتف | Phone Number</div>
+                <div class="contact-value">+97336640338</div>
+            </div>
+        </a>
+
+        <a href="https://wa.me/97336640338" target="_blank" class="contact-item">
+            <div class="icon whatsapp">💬</div>
+            <div class="contact-info">
+                <div class="contact-label">واتساب | WhatsApp</div>
+                <div class="contact-value">+97336640338</div>
+            </div>
+        </a>
+
+        <a href="mailto:a.alzaki06@gmail.com" class="contact-item">
+            <div class="icon email">✉️</div>
+            <div class="contact-info">
+                <div class="contact-label">البريد الإلكتروني | Email</div>
+                <div class="contact-value">a.alzaki06@gmail.com</div>
+            </div>
+        </a>
+
+        <a href="https://instagram.com/alialzaki1" target="_blank" class="contact-item">
+            <div class="icon instagram">📷</div>
+            <div class="contact-info">
+                <div class="contact-label">إنستقرام | Instagram</div>
+                <div class="contact-value">@alialzaki1</div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
